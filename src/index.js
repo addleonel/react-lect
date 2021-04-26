@@ -4,9 +4,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// from ./components/*
+import HelloWorld from './components/HelloWorld';
+import Buttons from './components/Buttons'
+
+const buttonTexts = {
+  buttonText1: "Click it 1!", 
+  buttonText2: "Click it 2!", 
+  buttonText3: "Click it 3!",
+}
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <HelloWorld />
+    <Buttons {...buttonTexts}/>
+    {/* <App /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
