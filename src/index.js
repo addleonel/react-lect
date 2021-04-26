@@ -6,7 +6,8 @@ import reportWebVitals from './reportWebVitals';
 
 // from ./components/*
 import HelloWorld from './components/HelloWorld';
-import Buttons from './components/Buttons'
+import Buttons from './components/Buttons';
+import Apples from './components/Apples';
 
 const buttonTexts = {
   buttonText1: "Click it 1!", 
@@ -18,7 +19,8 @@ ReactDOM.render(
   <React.StrictMode>
     <HelloWorld />
     <Buttons {...buttonTexts}/>
-    {/* <App /> */}
+    <Apples />
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
