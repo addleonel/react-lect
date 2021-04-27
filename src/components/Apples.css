@@ -1,0 +1,32 @@
+.Apples__container{
+    color:#ffffff;
+    padding:20px;
+    background-color: rgb(2, 15, 54);
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction:column;
+}
+
+.Apples__Buttons--container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.Apples__button{
+    font-size: 14px;
+    padding:15px 30px;
+    margin:10px 20px;
+    cursor:pointer;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: rgb(16, 37, 107);
+    border:none;
+    border-radius:8px;
+    transition: 0.3s;
+}
+.Apples__button:hover{
+    background-color: rgb(26, 61, 175);;
+}

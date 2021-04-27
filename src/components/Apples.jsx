@@ -1,4 +1,5 @@
 import React from 'react';
+import './Apples.css';
 
 class Apples extends React.Component{
     constructor(props){
@@ -72,6 +73,7 @@ class Apples extends React.Component{
             return {
                 boxAmount: newBoxesAmount,
                 appleAmount: newAmount,
+                warningMessage: "the box is empty",
             };
         })
     }
@@ -91,16 +93,22 @@ class Apples extends React.Component{
         const limitByBox = this.state.limitAmount;
     
         return (
-            <div>
+            <div className="Apples__container">
                 <h1>Apples</h1>
-                <p>Limit by box: {limitByBox}</p>
-                <h3>Apples: {numberOfApples}</h3>
-                <h3>Boxes: {numberOfBoxes}</h3>
-                <p>In this moment <strong>{warningMessage}</strong></p>
-                <button onClick={this.addingApples}>Add Apple</button>
-                <button onClick={this.removeApples}>Remove Apple</button>
-                <button onClick={this.addingBoxes}> Add new box</button>
-                <button onClick={this.reset}>Reset</button>
+                <div>
+                    <p>Limit by box: {limitByBox}</p>
+                    <h3>Apples: {numberOfApples} 🍎</h3>
+                    <h3>Boxes: {numberOfBoxes} 📦</h3>
+                </div>
+               
+                <div className="Apples__Buttons--container">
+                    <button className="Apples__button" type="button" onClick={this.addingApples}>Add Apple</button>
+                    <button className="Apples__button" type="button" onClick={this.removeApples}>Remove Apple</button>
+                    <button className="Apples__button" type="button" onClick={this.addingBoxes}> Add new box</button>
+                    <button className="Apples__button" type="button" onClick={this.reset}>Reset</button>
+                </div>
+
+                <p>In this moment <strong>"{warningMessage}"</strong></p>
             </div>
         );
     }
