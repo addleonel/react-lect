@@ -20,7 +20,6 @@ ReactDOM.render(
     <HelloWorld />
     <Buttons {...buttonTexts}/>
     <Apples />
-    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );

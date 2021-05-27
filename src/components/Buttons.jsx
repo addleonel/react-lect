@@ -1,13 +1,14 @@
 import React from 'react';
+import './Buttons.css';
 
 
 const Buttons = props => {
     const { buttonText1, buttonText2, buttonText3 } = props;
     return (
-        <div>
-            <button type="button">{buttonText1}</button>
-            <button type="button">{buttonText2}</button>
-            <button type="button">{buttonText3}</button>
+        <div className="click-button__container">
+            <button className="click-button__item" type="button">{buttonText1}</button>
+            <button className="click-button__item" type="button">{buttonText2}</button>
+            <button className="click-button__item" type="button">{buttonText3}</button>
         </div>
     )
 }
