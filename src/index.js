@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import HelloWorld from './components/HelloWorld';
 import Buttons from './components/Buttons';
 import Apples from './components/Apples';
+import PropsInAction from './components/Props';
 
 const buttonTexts = {
   buttonText1: "Click it 1!", 
@@ -19,6 +20,14 @@ ReactDOM.render(
     <HelloWorld />
     <Buttons {...buttonTexts}/>
     <Apples />
+    <div style={{color: "#000",}}>
+        <h1>Using props</h1>
+        <PropsInAction
+          name="Ryan"
+          age={23}
+          books={["Thinking Design", "Music", "Art", "Atomic"]}
+        />
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
