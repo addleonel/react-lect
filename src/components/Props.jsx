@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ArrayToHTMLList = ({item}) => {
-    const HTMLList = item.map((value) => <li>{value}</li>) 
+    const HTMLList = item.map((value, index) => <li key={index}>{value}</li>) 
     return (
         <React.Fragment>
             <ul>
