@@ -1,5 +1,5 @@
 import React from 'react';
-import './Apples.css';
+import '../assets/styles/Apples.css';
 
 class Apples extends React.Component{
     constructor(props){
